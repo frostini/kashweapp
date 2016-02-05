@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KASHWE - Where Everyone Wins</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+    <div id="container">
+      <div class="brand">
+        <div class="brand-icon">
+          <a href="/" id="kashwe-logo">
+            <img src="http://shinshinwu.github.io/images/logo@2x.png" style="width: 3.5em;" />
+          </a>
+        </div>
+
+        <div class="brand-name">
+            <h2>KASHWE</h2>
+              <p class="slogan">Where Everyone Wins</p>
+          </div><!-- end .brand-name -->
+      </div><!-- end .brand -->
+
+      <nav>
+        <ul>
+          <% if logged_in? %>
+            <li><%= link_to "Profile", current_user, :class=> "profile" %></li>
+            <li><%= link_to "Create New Group", new_group_path, :class=> "new-club" %></li>
+            <li><%= link_to "Log out", logout_path, method: "delete", :class=> "button" %></li>
+          <% else %>
+            <li><%= link_to "Sign Up", signup_path, :class=> "sign-up" %></li>
+            <li><%= link_to "Log In", login_path, :class=> "button" %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <%= yield %>
+
+</body>
+</html>

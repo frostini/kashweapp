@@ -1,0 +1,7 @@
+<form action="/users/<%= @user.id %>/depositreserve?group_id=<%= @group.id %>" method="post">
+  <p>Please enter your Dwolla User PIN below to confirm your participation with Savings group <%= @group.name %> and make your first reserve deposit of $<%= @group.payment_amount %>. The reserve will be hold on by KashWe in emergency situation of member default. This reserve will be returned to you once the savings group cycles end in <%= @group.users.count %> months.</p>
+  <label for="pin">Dwolla User PIN</label>:
+  <input name="dwolla_pin" type="number" />
+
+  <input type="submit" value="I confirm my participation in this savings group and hereby deposit my reserve payment." />
+</form>

@@ -1,0 +1,565 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@charset "UTF-8";
+/* CSS Document */
+
+/*custome css*/
+
+form {
+  background-color: white;
+}
+
+nav .button {
+  margin-top: -0.7em;
+}
+
+td a,
+button a {
+  text-decoration: none;
+}
+
+td a:hover,
+button a:hover {
+  text-decoration: underline;
+}
+
+td a:visited,
+button a:visited {
+  color: blue;
+}
+
+button a {
+  font-family: Lato-Bold;
+  font-size: 1.5em;
+}
+
+.landing {
+ background: #88BC3D ;
+ font-family: Lato-Regular, Arial, sans-serif;
+}
+
+#container {
+ width: 100%;
+ max-width: 960px;
+ margin: 0 auto;
+ /*padding: 1em 0*/;
+}
+
+#contain {
+ background-color: white;
+}
+
+#pic-holder img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.landing {
+ background: #88BC3D ;
+}
+
+.main-content {
+ color: #FFFFFF ;
+ text-align: center;
+}
+
+#intro-text {
+  padding-top: 1em;
+  margin: 4em auto;
+  max-width: 880px;
+  line-height: 2em;
+  color: white;
+}
+
+.how-text {
+ max-width: 100%;
+ background: #E7EBEE ;
+ height: 10em;
+ text-align: center;
+ padding-top: 3em;
+ color: #88BC3D ;
+}
+
+.goal-text {
+ max-width: 100%;
+ background-color: #88BC3D ;
+ height: 10em;
+ text-align: center;
+ padding-top: 3em;
+ color: white;
+}
+
+/*----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #E7EBEE;
+  font-family: Lato-Regular, Arial, sans-serif;
+}
+
+#landing {
+  background: url(../images/landing-image.png) top center no-repeat #88BC3D;
+  background-size: cover;
+}
+
+header {
+  background: #FFFFFF;
+  padding: 1em 0;
+  display: block;
+}
+
+#container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  /*padding: 1em 0*/;
+}
+
+.brand-text-color {
+  color: #88BC3D;
+}
+
+.grayed-out {
+  color: #D4D8DB;
+}
+
+.border-top {
+  border-top: 1px solid #E7EBEE;
+}
+
+.border-bottom, {
+  border-bottom: 1px solid #88BC3D;
+}
+
+.brand {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.brand-icon {
+  width: auto;
+  margin-right: 1.3%;
+  display: block;
+  float: left;
+}
+
+.brand-name {
+  line-height: 1.25em;
+    margin: 0.6em 0 0;
+  display: inline-block;
+}
+
+.brand-name h2 {
+  letter-spacing: 0.20em;
+  color: #363734;
+}
+
+h2 {
+  font-family: Lato-Black, Arial, sans-serif;
+}
+
+h3 {
+  font-family: Lato-Bold, Arial, sans-serif;
+  font-size: 1.08em;
+    font-weight: 600;
+    padding: 0.6em 0;
+}
+
+.slogan {
+  color: #88bc3d;
+    font-family: Lato-Light,Arial,sans-serif;
+    font-size: 0.66em;
+    font-style: italic;
+    letter-spacing: 0.10em;
+}
+
+nav {
+  float: right;
+  font-family: Lato-Black, Arial, sans-serif;
+  font-weight: 300;
+}
+
+ul, li {
+  text-decoration: none;
+  list-style: none;
+  float: left;
+}
+
+header nav ul {
+  float: left;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 1em 1.65em;
+}
+
+header nav ul li a:hover {
+  color: #88BC3D;
+}
+
+.active {
+  border-bottom: 4px solid #88BC3D;
+  padding-bottom: 26px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #363734;
+  display: block;
+}
+
+/*.button {
+  border: 3px solid #88BC3d;
+    -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+    margin: 0;
+    padding: 0.7em 1.8em;
+}*/
+
+.button {
+    border: 3px solid #88bc3d;
+    -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+    margin: 0;
+    padding: 0.7em 0;
+    width: 7em;
+}
+
+.active-button, .button.login:hover {
+  background: #88BC3D;
+  color: #FFFFFF;
+  border: 3px solid #88bc3d;
+    -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+    margin: 0;
+    padding: 0.7em 0;
+    width: 7em;
+}
+
+li.button.login a:hover {
+  color: #FFFFFF;
+}
+
+nav ul li.button a {
+  color: #88BC3D;
+}
+
+nav ul li.active-button a, nav ul li.active-button a:hover {
+  color: #FFFFFF;
+}
+
+#main-content {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#intro-text {
+  margin: 4em auto;
+  max-width: 880px;
+  line-height: 2em;
+}
+
+#main-content p {
+  font-size: 1.45em;
+  margin-top: 1em;
+}
+
+#user-section {
+  background: #FFFFFF;
+  height: auto;
+  padding: 2em 0;
+}
+
+#avatar {
+  width: 100px;
+  height: 100px;
+  border: 4px solid #E7EBEE;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.user-avatar {
+  background: url(../images/avatar.jpg) #E7EBEE center center no-repeat;
+  background-size: 200px;
+}
+
+.club-avatar {
+  background: url(../images/m-symbol.png) #E7EBEE center center no-repeat;
+  background-size: 100px;
+}
+
+#user-info {
+  display: inline-block;
+}
+
+#table {
+  margin: 1.5em 0;
+}
+
+.login-table {
+  width: 350px;
+  margin: 1.5em auto;
+}
+
+.login-title {
+  font-family: Lato-Black, Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 1.5em 0;
+  font-size: 1.5em;
+}
+
+.table-title {
+    font-weight: 100;
+    letter-spacing: 0.04em;
+    margin: 0 1em 0.85em;
+  color: #999999;
+}
+
+table {
+  width: 100%;
+  background: #FFFFFF;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table.reference {
+    max-width: 100%;
+    width: 100%;
+}
+
+table.reference > thead > tr > th, table.reference > tbody > tr > th, table.reference > tfoot > tr > th, table.reference > thead > tr > td, table.reference > tbody > tr > td, table.reference > tfoot > tr > td {
+    line-height: 1.42857;
+    padding: 1em;
+    vertical-align: top;
+}
+th {
+    text-align: left;
+}
+td, th {
+    padding: 0;
+}
+
+.categories {
+  color: #88BC3D;
+}
+
+table.reference tr:nth-child(2n+1) {
+    background-color: #FFFFFF;
+}
+
+table.reference tr:nth-child(2n) {
+    background-color: #F9F9F9;
+}
+
+.club-name {
+  font-family: Lato-Bold, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.pay {
+  background: #88BC3D;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+    margin: 0;
+    padding: 0.2em 0;
+    width: 4em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.paid {
+  background: #E7EBEE;
+}
+
+#row {
+  background: #FFFFFF;
+    box-sizing: padding-box;
+    height: auto;
+    padding: 1em;
+    width: 100%;
+  border-bottom: 1px solid #E7EBEE;
+  display: flex;
+}
+
+.column1 {
+  font-family: Lato-Regular, Arial, sans-serif;
+  display: inline-flex;
+  margin: 0 0.65em 0 0;
+}
+
+.column2 {
+  font-family: Lato-Bold, Arial, sans-serif;
+  font-weight: bold;
+  display: inline-flex;
+  margin: 0 0 0 0.65em;
+  letter-spacing: 0.06em
+}
+
+.input-text-field {
+  font-family: Lato-Regular, Arial, sans-serif;
+  display: inline-flex;
+  margin: 0 0 0 0.65em;
+  letter-spacing: 0.06em;
+}
+
+/*#data {
+  background: #FFFFFF;
+  height: auto;
+  width: 100%;
+}
+
+
+*/
+
+.form-input-name:before {
+  content: "eg. John Luther";
+}
+
+.form-input-email:before {
+  content: "eg. name@email.com";
+}
+
+.form-input-password:before {
+  content: "Minimum of 6 symbols";
+}
+
+.form-input-bank-name:before {
+  content: "eg. Capital One";
+}
+
+.form-input-acctnum:before {
+  content: "eg. 123456789123";
+}
+
+.form-input-type-accnt:before {
+  content: "eg. Checking";
+}
+
+.form-input-club-name:before {
+  content: "What's the club's name?";
+}
+
+.form-input-club-type:before {
+  content: "Savings or Credit?";
+}
+
+.form-input-payment-amnt:before {
+  content: "$00.00";
+}
+
+.form-input-date:before {
+  content: "eg. Every 5th of the Month";
+}
+
+.form-input-login-email:before {
+  content: "Email";
+}
+
+.form-input-login-password:before {
+  content: "Password";
+}
+
+
+
+#submit-row {
+  background: #FFFFFF;
+    box-sizing: padding-box;
+    height: auto;
+    padding: 1em;
+    width: 100%;
+  border-bottom: 1px solid #E7EBEE;
+  float: right;
+}
+
+.submit-row {
+  display: block;
+}
+
+#submit-button {
+  background: #0097DE;
+  text-align: center;
+  color: #FFFFFF;
+    -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+    margin: 0;
+    padding: 0.7em 0;
+    width: 7em;
+  display: block;
+  float: right;
+}
+
+#submit-button-inactive {
+  background: #b2e0f5;
+  text-align: center;
+  color: #FFFFFF;
+    -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+    margin: 0;
+    padding: 0.7em 0;
+    width: 7em;
+  display: block;
+  float: right;
+}
+
+.fltrt {
+  float: right;
+}
+
+
+/*****   IMPORT FONT   *****/
+
+@font-face {
+  font-family: Lato-Black;
+  src: url(../fonts/Lato/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato-Light;
+  src: url(../fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: Lato-Italic;
+  src: url(../fonts/Lato/Lato-Italic.ttf);
+}

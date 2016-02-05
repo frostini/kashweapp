@@ -1,0 +1,63 @@
+<div id="content">
+
+    <div id="container">
+
+        <div id="table" class="activity-info">
+
+            <h4 class="table-title">Add Members to Your <%= @group.name %> Group by Their Email</h4>
+
+                <form action="/groups/<%= @group.id %>/addmembers" method="post">
+                    <ul id="membersList">
+                    <div id="row">
+                        <li>
+                            <div class="column1">
+                                <p>Member 1</p>
+                            </div>
+                            <input class="input-text-field grayed-out" name="member1" type="email" placeholder="mail@mail.com">
+                        </li>
+                    </div>
+                    <div id="row">
+                        <li>
+                            <div class="column1">
+                                <p>Member 2</p>
+                            </div>
+                            <input name="member2" type="email" placeholder="mail@mail.com">
+                        </li>
+                    </div>
+                    <div id="row">
+                        <div class="column1">
+                            <p>Member 3</p>
+                        </div>
+                        <li><input name="member3" type="email" placeholder="mail@mail.com"></li>
+                    </div>
+                    <div id="row">
+                        <div class="column1">
+                            <p>Member 4</p>
+                        </div>
+                        <li><input name="member4" type="email" placeholder="mail@mail.com"></li>
+                    </div>
+                    </ul>
+                <div id="submit-row">
+                    <div class="submit-row">
+                        <input type="submit" value="Submit" id="submit-button">
+                    </div>
+                </div>
+                </form>
+            </div>
+
+            <div id="right_side">
+                <button id="addMember">+ Add Members</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var idNum = 4
+    $('#addMember').click(function(e){
+        idNum += 1
+        var listOfMembers = $("#membersList");
+        listOfMembers.append("<div id='row'><div class='column1'><p>Member "  + idNum + "</p></div><li><input name= " + "member" + idNum + " type='email' placeholder='additional member email'>" + "</li></div>")
+    })
+</script>

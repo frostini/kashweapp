@@ -1,0 +1,31 @@
+<div id="content">
+  <div id="container">
+    <div id="table login" class="login-table">
+
+      <h1 class="login-title">Log in</h1>
+      <div id="data">
+
+          <%= form_for(:session, url: login_path) do |f| %>
+          <div id="row">
+
+            <%= f.label :email %>
+            <%= f.email_field :email, class: "input-text-field form-input-login-email grayed-out" %>
+          </div>
+
+          <div id="row">
+
+            <%= f.label :password %>
+            <%= f.password_field :password, class: "input-text-field form-input-login-password grayed-out" %>
+          </div>
+
+            <div id="submit-row">
+              <div class="submit-row">
+                <%= f.submit "Log in", id: "submit-button" %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

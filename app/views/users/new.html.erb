@@ -1,0 +1,46 @@
+<div id="content">
+    <div id="container">
+
+        <div id="table" class="account-info">
+            <h4 class="table-title">Sign Up</h4>
+
+            <div id="data">
+              <%= form_for(@user) do |f| %>
+
+              <div id="row">
+                <div class="column1">
+                    <p><%= f.label :first_name, 'First Name' %></p>
+                </div>
+                <%= f.text_field :first_name, placeholder: 'Clark' %>
+            </div>
+
+            <div id="row">
+                <div class="column1">
+                    <p><%= f.label :last_name, 'Last Name' %></p>
+                </div>
+                <%= f.text_field :last_name, placeholder: 'Kent' %>
+            </div>
+            <div id="row">
+                <div class="column1">
+                    <p><%= f.label :email, 'Email' %></p>
+                </div>
+                <%= f.email_field :email, placeholder: 'clarkkent@gmail.com' %>
+            </div>
+
+            <div id="row">
+                <div class="column1">
+                    <p><%= f.label :password, 'Password' %></p>
+                </div>
+                <%= f.password_field :password, placeholder: 'Secure Password more than 6 characters' %>
+            </div>
+
+            <div id="submit-row">
+                <div class="submit-row">
+                <%= f.submit "Create", id: "submit-button" %>
+                </div>
+            </div>
+              <% end %>
+            </div>
+        </div>
+    </div>
+</div>
